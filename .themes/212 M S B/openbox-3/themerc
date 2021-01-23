@@ -1,0 +1,156 @@
+!# Clearlooks-Evolving
+!# Clearlooks as it evolves in gnome-git...
+!# Last updated 09/03/10
+
+# Fonts
+# these are really halos, but who cares?
+
+*.font: shadow=n
+window.active.label.text.font:shadow=y:shadowtint=-70:shadowoffset=1
+window.active.button.image:shadow=y:shadowtint=-70:shadowoffset=1
+window.inactive.label.text.font:shadow=y:shadowtint=-60:shadowoffset=1
+#window.inactive.label.text.font:shadow=y:shadowtint=00:shadowoffset=0
+menu.items.font:shadow=y:shadowtint=-20:shadowoffset=1
+
+!# general stuff
+
+padding.width: 1
+border.width: 0
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.handle.width: 0
+menu.border.width: 0
+menu.overlap: 0
+
+*.justify: center
+
+!# lets set our damn shadows here, eh?
+
+*.bg.highlight: 50
+*.bg.shadow:    05
+
+window.active.title.bg.highlight: 35
+window.active.title.bg.shadow:    05
+
+window.inactive.title.bg.highlight: 30
+window.inactive.title.bg.shadow:    05
+
+window.*.grip.bg.highlight: 50
+window.*.grip.bg.shadow:    30
+
+window.*.handle.bg.highlight: 50
+window.*.handle.bg.shadow:    30
+
+!# Menu settings
+
+menu.title.bg: Flat
+menu.title.bg.color: #DEDEDE
+menu.title.text.color: #565656
+menu.title.text.justify: center
+
+menu.items.bg: Flat
+menu.items.bg.color:  #DEDEDE
+menu.items.text.color: #565656
+menu.items.disabled.text.color: #434343
+
+menu.items.active.bg: Flat
+menu.items.active.bg.color: #95B3CC
+menu.items.active.text.color: #565656
+menu.items.active.disabled.text.color: #434343
+menu.border.width: 0
+menu.border.color: #8D8D8D
+
+!! menu items
+menu.items.bg: flat
+menu.items.bg.color:#eaeaea
+menu.items.bg.colorTo:#0b0b0b
+
+menu.items.text.color:#585858
+menu.items.justify: left
+menu.items.disabled.text.color: #777777 
+menu.items.active.bg: gradient vertical raised border
+menu.items.active.bg.color:#ffffff
+menu.items.active.bg.colorTo:#c3c3c3
+menu.items.active.bg.border.color:#000000
+menu.items.active.text.color:#333333
+osd.border.width: 0
+osd.border.color:  #707070
+osd.bg: flat border vertical gradient
+osd.bg.color: #222222
+osd.bg.colorTo: #222222
+osd.bg.border.color: #c0c0c0
+osd.label.bg: parentrelative
+osd.label.text.color: #c0c0c0
+
+
+!# set handles here and only the once?
+
+window.*.handle.bg: Raised solid
+# Raised solid
+window.*.handle.bg.color: #eaebec
+
+window.*.grip.bg: Raised solid
+window.*.grip.bg.color: #DEDEDE
+
+!# Active
+
+window.*.border.color: #8d8d8d
+
+window.active.title.separator.color: #DEDEDE
+
+*.title.bg: flat Gradient vertical
+*.title.bg.color: #EEEEEE
+*.title.bg.colorTo: #DEDEDE
+
+
+window.active.label.bg: Parentrelative
+window.active.label.text.color: #727272
+
+window.active.button.*.bg: Parentrelative
+
+window.active.button.*.image.color: #8d8d8d
+
+window.active.button.hover.image.color: #d8d8d8
+
+window.active.button.pressed.bg: Parentrelative
+window.active.button.pressed.image.color: #6FA2CA
+
+
+!# inactive
+
+!#window.inactive.border.color: #8d8d8d
+window.inactive.title.separator.color: #DEDEDE
+
+window.inactive.title.bg: flat Gradient vertical
+window.inactive.title.bg.color: #EEEEEE
+window.inactive.title.bg.colorTo: #DEDEDE
+
+window.inactive.label.bg: Parentrelative
+window.inactive.label.text.color: #828282
+
+window.inactive.button.*.bg: Parentrelative
+window.inactive.button.*.image.color: #828282
+
+
+!# osd (pop ups and what not, dock?)
+
+osd.border.width: 0
+osd.border.color: #96B4CD
+
+osd.bg: flat 
+osd.bg.color: #4E4E4E
+osd.bg.colorTo: #4E4E4E
+
+osd.bg.border.color: #ffffff
+
+osd.label.bg: parentrelative
+osd.label.bg.color: #4E4E4E
+osd.label.bg.border.color: #96B4CD
+
+osd.label.text.color: #E7E7E7
+osd.hilight.bg: flat 
+osd.hilight.bg.color: #9ebde5
+osd.hilight.bg.colorTo: #749dcf
+osd.unhilight.bg: flat vertical gradient
+osd.unhilight.bg.color: #BABDB6
+osd.unhilight.bg.colorTo: #efefef
