@@ -159,7 +159,7 @@ local function pl_middle(icon, widget, bgcolor, left_padding, right_padding, but
         wibox.container.margin(
             wibox.widget { icon, widget, layout = wibox.layout.align.horizontal },
             dpi(left_padding), dpi(right_padding)),
-        bgcolor)
+            bgcolor)
 
     if buttons then
         plm:buttons(buttons)
@@ -213,14 +213,6 @@ local netinfo = lain.widget.net({
     settings = function()
         netupinfo:set_markup(wgt_markup(beautiful.widget_neticon,  string.format("%05.1f ", net_now.sent )))
         netdowninfo:set_markup(markup.fontfg(beautiful.font, beautiful.widget_text_color,  string.format(" %05.1f", tonumber(net_now.received))))
-    end
-})
-
--- MEM
-local memicon = wibox.widget.imagebox(beautiful.widget_mem)
-local memory = lain.widget.mem({
-    settings = function()
-        widget:set_markup(markup.fontfg(beautiful.font, beautiful.widget_text_color, string.format("%02d%% ", tonumber(mem_now.perc))))
     end
 })
 
@@ -369,13 +361,10 @@ awful.screen.connect_for_each_screen(function(s)
             pl_middle(tempicon, temp.widget, beautiful.powerline_bg2, 0, 0, sysmon_buttons),
 
             arrow_left(beautiful.powerline_bg2, beautiful.powerline_bg1),
-            pl_middle(memicon, memory.widget, beautiful.powerline_bg1, 0, 0, sysmon_buttons),
+            pl_middle(nil, netdowninfo, beautiful.powerline_bg1, 0, 0, sysmon_buttons),
+            pl_middle(nil, netupinfo, beautiful.powerline_bg1, 0, 1, sysmon_buttons),
 
             arrow_left(beautiful.powerline_bg1, beautiful.powerline_bg2),
-            pl_middle(nil, netdowninfo, beautiful.powerline_bg2, 0, 0, sysmon_buttons),
-            pl_middle(nil, netupinfo, beautiful.powerline_bg2, 0, 1, sysmon_buttons),
-
-            arrow_left(beautiful.powerline_bg2, beautiful.powerline_bg1),
             pl_middle(nil,
                       weather_widget({
                                     api_key = '361b7e987933fab20873de4731f25d6c',
@@ -384,9 +373,9 @@ awful.screen.connect_for_each_screen(function(s)
                                     show_daily_forecast = true,
                                     timeout = 600,
                                     }), 
-                      beautiful.powerline_bg1, 4, 5),
+                      beautiful.powerline_bg2, 4, 5),
 
-            arrow_left(beautiful.powerline_bg1, "alpha"),
+            arrow_left(beautiful.powerline_bg2, "alpha"),
             pl_middle(nil, mytextclock, alpha, 0, 0),
 
             --s.mylayoutbox
