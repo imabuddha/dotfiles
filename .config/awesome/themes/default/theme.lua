@@ -29,7 +29,7 @@ theme.fg_focus      = "#E0E0E0"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#CFCFCF"
 
-theme.useless_gap   = dpi(2)
+theme.useless_gap   = dpi(0)
 theme.systray_icon_spacing = dpi(4)
 
 theme.border_width  = dpi(1)
@@ -43,7 +43,7 @@ theme.hotkeys_font = "MesloGS NF Bold 9"
 theme.hotkeys_description_font = "MesloGS NF Regular 8"
 
 theme.hotkeys_group_margin = dpi(10)
-theme.hotkeys_border_width = dpi(2)
+theme.hotkeys_border_width = dpi(3)
 
 theme.hotkeys_border_color = "#E09100"
 theme.hotkeys_modifiers_fg = "#68A0C1"

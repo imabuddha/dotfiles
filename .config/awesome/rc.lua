@@ -74,8 +74,6 @@ end
 local theme_path = string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), "default")
 beautiful.init(theme_path)
 
-beautiful.useless_gap = 0
-
 -- lain widgets, utils, layouts lib
 local lain  = require("lain")
 local markup = lain.util.markup
@@ -515,9 +513,9 @@ globalkeys = gears.table.join(
               {description = "lock screen", group = "awesome"}),
 
     -- On the fly useless gaps change
-    awful.key({ "Mod1", "Control" }, "=", function () lain.util.useless_gaps_resize(1) end,
+    awful.key({ modkey }, "=", function () lain.util.useless_gaps_resize(1) end,
               {description = "inc useless gaps", group = "layout"}),
-    awful.key({ "Mod1", "Control" }, "-", function () lain.util.useless_gaps_resize(-1) end,
+    awful.key({ modkey }, "-", function () lain.util.useless_gaps_resize(-1) end,
               {description = "dec useless gaps", group = "layout"}),
 
     -- Screenshot
@@ -535,14 +533,6 @@ globalkeys = gears.table.join(
               {description = "raise volume", group = "media"}),
     awful.key({}, "XF86AudioMute", function () volume_widget:toggle() end,
               {description = "toggle mute", group = "media"}),
-    --[[
-    awful.key({}, "XF86AudioLowerVolume", function () awful.spawn("pa-volume -1%", false) end,
-              {description = "lower volume", group = "media"}),
-    awful.key({}, "XF86AudioRaiseVolume", function () awful.spawn("pa-volume +1%", false) end,
-              {description = "raise volume", group = "media"}),
-    awful.key({}, "XF86AudioMute", function () awful.spawn("pa-mute toggle", false) end,
-              {description = "toggle mute", group = "media"}),
-    --]]
 
     -- apps -jdm
     awful.key({ modkey }, "e", function () awful.spawn("mousepad", false) end,
