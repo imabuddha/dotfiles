@@ -51,6 +51,8 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
+syntax enable
+set background=dark
 
 if has("gui_running")
   colorscheme torte
