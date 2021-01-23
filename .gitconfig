@@ -1,0 +1,7 @@
+[user]
+	name = John Mifsud
+	email = imabuddha@gmail.com
+[color]
+	ui = auto
+[init]
+	defaultBranch = main
