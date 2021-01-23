@@ -2,7 +2,7 @@
 
 if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
     # Remove option --tab for new window
-    lxterminal -e "clear;/usr/bin/vim \"$*\""
+    lxterminal -e "clear;vim \"$*\""
 else
     # tmux session running
     tmux split-window -h "vim \"$*\""

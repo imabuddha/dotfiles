@@ -29,5 +29,7 @@ fi
 XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CONFIG_HOME
 
+export FONTCONFIG_PATH=/etc/fonts
+
 GOPATH=$HOME/code/golang
 #source "$HOME/.cargo/env"
