@@ -1,0 +1,14 @@
+#
+# .tzlist Place list file, as used by slashtime
+#
+# =========================================================
+# ** THIS FILE SHOULD BE .tzlist IN YOUR $HOME DIRECTORY **
+# =========================================================
+# 
+
+"Asia/Tokyo"	"Miyazaki"	"Japan"
+"America/Los_Angeles"	"Los Angeles"	"USA"
+"America/New_York"	"New York"	"USA"
+"Europe/Berlin"	"Munich"	"Germany"
+
+# vim: set ts=25:
