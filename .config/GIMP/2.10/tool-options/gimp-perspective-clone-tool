@@ -1,0 +1,11 @@
+# GIMP gimp-perspective-clone-tool options
+
+(foreground (color-rgb 1.000000 0.000000 0.000000))
+(brush "square (50x50) blur #2")
+(dynamics "Dynamics Off")
+(pattern "Pine")
+(palette "Color History")
+(brush-size 50.000000)
+(brush-spacing 0.500000)
+
+# end of gimp-perspective-clone-tool options

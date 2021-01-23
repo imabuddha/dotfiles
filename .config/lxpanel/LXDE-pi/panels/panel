@@ -1,0 +1,161 @@
+# lxpanel <profile> config file. Manually editing is not recommended.
+# Use preference dialog in lxpanel to adjust config when you can.
+
+Global {
+  edge=top
+  align=left
+  margin=0
+  widthtype=percent
+  width=100
+  height=28
+  transparent=0
+  tintcolor=#000000
+  alpha=0
+  autohide=0
+  heightwhenhidden=2
+  setdocktype=1
+  setpartialstrut=1
+  usefontcolor=0
+  fontsize=12
+  fontcolor=#ffffff
+  usefontsize=0
+  background=0
+  backgroundfile=/usr/share/lxpanel/images/background.png
+  iconsize=28
+  monitor=0
+  point_at_menu=0
+}
+Plugin {
+  type=menu
+  Config {
+    padding=4
+    image=rpi
+    system {
+    }
+    separator {
+    }
+    item {
+      image=system-run
+      command=run
+    }
+    separator {
+    }
+    item {
+      name=Lock…
+      image=gnome-lockscreen
+      action=/usr/bin/dm-tool lock
+    }
+    item {
+      image=system-shutdown
+      command=logout
+    }
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=8
+  }
+  expand=0
+}
+Plugin {
+  type=launchtaskbar
+  Config {
+    FlatButton=0
+    IconsOnly=0
+    UseMouseWheel=0
+    GroupedTasks=0
+    DisableUpscale=0
+    UseSmallerIcons=-1
+    LaunchTaskBarMode=1
+    MaxTaskWidth=400
+  }
+}
+Plugin {
+  type=tray
+  Config {
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=8
+  }
+}
+Plugin {
+  type=ejecter
+  Config {
+    AutoHide=1
+  }
+}
+Plugin {
+  type=cpu
+  Config {
+    ShowPercent=0
+    Foreground=#00007e7ef5f5
+    Background=#26134dac7851
+  }
+}
+Plugin {
+  type=cputemp
+  Config {
+    Foreground=#00007e7ef5f5
+    Background=#6eda865d9eb8
+    Throttle1=#ffffa5a50000
+    Throttle2=#ffff00000000
+    HighTemp=80
+    LowTemp=30
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=7
+  }
+}
+Plugin {
+  type=bluetooth
+  Config {
+  }
+}
+Plugin {
+  type=dhcpcdui
+  Config {
+  }
+}
+Plugin {
+  type=volumepulse
+  Config {
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=6
+  }
+}
+Plugin {
+  type=weather
+  Config {
+    alias=880-0301
+    city=880-0301
+    country=Japan
+    units=c
+    latitude=32.040950
+    longitude=131.408149
+    interval=20
+    enabled=1
+    provider=openweathermap
+  }
+}
+Plugin {
+  type=dclock
+  Config {
+    ClockFmt=%R
+    TooltipFmt=%A %x
+    BoldFont=0
+    IconOnly=0
+    CenterText=1
+    Action=gsimplecal
+  }
+}

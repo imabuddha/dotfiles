@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Shairport-sync autostart
+Comment=must be run after login because of pulseaudio
+NoDisplay=true
+Exec=/usr/local/bin/shairport-sync
