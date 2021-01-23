@@ -4,11 +4,13 @@ Configuration files for my linux/unix computers. Most of these are named '.XXX',
 
 ## Usage
 
-```
-dotfiles add _some file or dir_
-dotfiles commit -m "comment"
-dotfiles push
-```
+* Add file(s) and/or directories to commit: `dotfiles add some-file-or-dir`
+
+* Add all modified/deleted to commit: `dotfiles add -u`
+
+* Commit changes to local repo with msg: `dotfiles commit -m "comment"`
+
+* Push local repo changes to github: `dotfiles push`
 
 See  https://www.atlassian.com/git/tutorials/dotfiles, https://martijnvos.dev/using-a-bare-git-repository-to-store-linux-dotfiles/, & https://www.ackama.com/blog/posts/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained for more examples of usage
 
