@@ -2,6 +2,16 @@
 
 Configuration files for my linux/unix computers. Most of these are named '.XXX', commonly referred to as dotfiles.
 
+## Usage
+
+```
+dotfiles add _some file or dir_
+dotfiles commit -m "comment"
+dotfiles push
+```
+
+See  https://www.atlassian.com/git/tutorials/dotfiles, https://martijnvos.dev/using-a-bare-git-repository-to-store-linux-dotfiles/, & https://www.ackama.com/blog/posts/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained for more examples of usage
+
 ## License
 
 _Note, some files included in this repository are licensed under different terms by their authors/creators. In all other cases the following license shall apply:_
