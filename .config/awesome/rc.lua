@@ -819,10 +819,8 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 awful.spawn.with_shell(
        'if (xrdb -query | grep -q "^awesome\\.started:\\s*true$"); then exit; fi;' ..
        'xrdb -merge <<< "awesome.started:true";' ..
-
+       'dex --environment Awesome --autostart --search-paths "$XDG_CONFIG_HOME/autostart";' ..
        -- optionally, list each of your autostart commands, followed by ; inside single quotes, followed by ..
-       'nitrogen --restore;' ..  -- wallpaper
-       'xscreensaver -no-splash;' ..    -- screensaver
-       
-       'dex --environment Awesome --autostart --search-paths "$XDG_CONFIG_HOME/autostart"'
+       'nitrogen --restore;' ..
+       'xscreensaver -no-splash'
        )
