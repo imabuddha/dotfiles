@@ -1,0 +1,7 @@
+#!/bin/bash
+clear
+
+glxgears  >/dev/null &
+echo running a full day, ctrl+c to quit
+stress-ng --cpu 0 --cpu-method fft
+

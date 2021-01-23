@@ -1,0 +1,11 @@
+#!/bin/bash
+# This script is for Raspberry pi os (current as of 7 Dec 2020)
+# Make sure shairport-sync is terminated on logout
+# (with pulseaudio backend can't run shairport-sync as service)
+#
+# Suggested location for this script: /usr/local/bin/kill-shairport-sync
+#
+# Place the following line in /etc/lightdm/lightdm.conf [Seat:*] section:
+# session-cleanup-script={LOCATION_OF_THIS_SCRIPT_FILE}
+
+pgrep -x shairport-sync | xargs -t kill -1

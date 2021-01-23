@@ -1,0 +1,10 @@
+#!/bin/bash
+clear
+
+while :
+do
+  date
+  vcgencmd measure_temp
+  sleep 5m
+done
+

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+display_usage() { 
+	echo -e "\nSet pulseaudio output volume.\n" 
+	echo -e "Usage: $0 VOLUME\n"
+	echo -e "    VOLUME can be specified as an integer (e.g. 2000, 16384), a linear"
+	echo -e "\tfactor (e.g. 0.4, 1.100), a  percentage  (e.g. 10%,  100%) or a"
+	echo -e "\tdecibel value (e.g. 0dB, 20dB). If the volume specification"
+	echo -e "\tstarts with a + or - the volume adjustment will  be  relative to"
+	echo -e "\tthe current volume.\n" 
+	} 
+
+if [ ! $# -eq 1 ] 
+  then 
+    display_usage
+    exit 1
+fi 
+ 
+if [[ ( $1 == "--help") ||  $1 == "-h" ]] 
+  then 
+    display_usage
+    exit 0
+fi 
+
+pactl set-sink-volume @DEFAULT_SINK@ $1
