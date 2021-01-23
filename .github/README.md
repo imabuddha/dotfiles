@@ -12,7 +12,13 @@ Configuration files for my linux/unix computers. Most of these are named '.XXX',
 
 * Push local repo changes to github: `dotfiles push`
 
-See  https://www.atlassian.com/git/tutorials/dotfiles, https://martijnvos.dev/using-a-bare-git-repository-to-store-linux-dotfiles/, & https://www.ackama.com/blog/posts/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained for more examples of usage
+See the following pages for more info/usage:
+
+* https://www.atlassian.com/git/tutorials/dotfiles
+
+* https://martijnvos.dev/using-a-bare-git-repository-to-store-linux-dotfiles/
+
+* https://www.ackama.com/blog/posts/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained
 
 ## License
 
