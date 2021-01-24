@@ -29,7 +29,7 @@ theme.fg_focus      = "#E0E0E0"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#CFCFCF"
 
-theme.useless_gap   = dpi(2)
+theme.useless_gap   = dpi(3)
 theme.systray_icon_spacing = dpi(4)
 
 theme.border_width  = dpi(1)
