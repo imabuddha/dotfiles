@@ -1,0 +1,3 @@
+[submodule "/home/pi/.vim/pack/dist/start/vim-devicons"]
+	path = /home/pi/.vim/pack/dist/start/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
