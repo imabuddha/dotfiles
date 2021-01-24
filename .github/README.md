@@ -14,7 +14,7 @@ Configuration files for my linux/unix computers. Most of these are named '.XXX',
 
 * Push local repo changes to github: `dotfiles push`
 
-### Updating packages
+### Updating Submodules
 
 ```
 dotfiles submodule update --remote --merge
