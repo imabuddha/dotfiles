@@ -205,7 +205,7 @@ notify.format_title_tf %title%
 output_plugin pulseaudio
 playback.loop 1
 playback.order 0
-playback.volume -9.000000
+playback.volume -11.00000
 playlist.current 2
 playlist.cursor.0 444
 playlist.cursor.1 8

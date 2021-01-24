@@ -8,9 +8,20 @@ Configuration files for my linux/unix computers. Most of these are named '.XXX',
 
 * Add all modified/deleted to commit: `dotfiles add -u`
 
+* Add submodule to commit: `dotfiles submodule add https://github.com/USER/REPO LOCAL-DIR`
+
 * Commit changes to local repo with msg: `dotfiles commit -m "comment"`
 
 * Push local repo changes to github: `dotfiles push`
+
+### Updating packages
+
+To update packages is also just a case of updating git submodules.
+
+```
+dotfiles submodule update --remote --merge
+dotfiles commit
+```
 
 See the following pages for more info/usage:
 
