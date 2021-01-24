@@ -16,8 +16,6 @@ Configuration files for my linux/unix computers. Most of these are named '.XXX',
 
 ### Updating packages
 
-To update packages is also just a case of updating git submodules.
-
 ```
 dotfiles submodule update --remote --merge
 dotfiles commit
