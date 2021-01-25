@@ -23,3 +23,5 @@ audio/mpeg=mpv.desktop;
 audio/x-wav=mpv.desktop;
 text/markdown=ghostwriter.desktop;
 text/x-chdr=vim.desktop;
+text/plain=gvim.desktop;
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
