@@ -137,7 +137,7 @@ logwindow.geometry.y 40
 mainwin.geometry.h 909
 mainwin.geometry.maximized 0
 mainwin.geometry.w 1346
-mainwin.geometry.x 1212
+mainwin.geometry.x 572
 mainwin.geometry.y 26
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
@@ -205,10 +205,10 @@ notify.format_title_tf %title%
 output_plugin pulseaudio
 playback.loop 1
 playback.order 0
-playback.volume -13.00000
-playlist.current 1
-playlist.cursor.0 299
-playlist.cursor.1 6
+playback.volume -11.00000
+playlist.current 0
+playlist.cursor.0 115
+playlist.cursor.1 3
 playlist.cursor.2 1
 playlist.cursor.3 0
 playlist.cursor.4 0
@@ -219,8 +219,8 @@ playlist.cursor.8 0
 playlist.cursor.9 0
 playlist.groups.spacing 8
 playlist.pin.groups 0
-playlist.scroll.0 7101
-playlist.scroll.1 -6
+playlist.scroll.0 3393
+playlist.scroll.1 -3
 playlist.scroll.2 -1
 playlist.scroll.3 0
 playlist.scroll.4 0
@@ -244,9 +244,9 @@ quick_search.append_search_string 1
 quick_search.history_size 10.000000
 quick_search.search_in 0
 resume.paused 0
-resume.playlist 1
-resume.position 1974.1097
-resume.track 6
+resume.playlist 0
+resume.position 88.879364
+resume.track 115
 searchwin.geometry.h 150
 searchwin.geometry.w 450
 searchwin.geometry.x 708

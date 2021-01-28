@@ -21,7 +21,7 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 naughty.config.icon_formats = {"png", "gif", "svg"}
 naughty.config.icon_dirs = {
-    "/usr/share/pixmaps/", 
+    "/usr/share/pixmaps/",
     "/usr/share/icons/gnome/16x16/status/",
     "/usr/share/icons/gnome/16x16/devices/",
     "/usr/local/share/icons/hicolor/32x32/apps/"
@@ -372,7 +372,7 @@ awful.screen.connect_for_each_screen(function(s)
                                     show_hourly_forecast = true,
                                     show_daily_forecast = true,
                                     timeout = 600,
-                                    }), 
+                                    }),
                       beautiful.powerline_bg2, 4, 5),
 
             arrow_left(beautiful.powerline_bg2, "alpha"),
@@ -544,9 +544,9 @@ globalkeys = gears.table.join(
               {description = "pdf viewer", group = "launcher"}),
     awful.key({ modkey, "Mod1" }, "space", function () awful.spawn("splatmoji -s light type", false) end,
               {description = "emoji", group = "launcher"}),
-    awful.key({ modkey }, "w", 
-              function () awful.spawn("/usr/bin/chromium-browser --profile-directory=Default --app-id=jgeocpdicgmkeemopbanhokmhcgcflmi", 
-                                      false) 
+    awful.key({ modkey }, "w",
+              function () awful.spawn("/usr/bin/chromium-browser --profile-directory=Default --app-id=jgeocpdicgmkeemopbanhokmhcgcflmi",
+                                      false)
               end,
               {description = "twitter", group = "launcher"}),
     awful.key({ modkey }, "c", function () awful.spawn("galculator", false) end,
@@ -723,13 +723,13 @@ awful.rules.rules = {
     },
 
     -- DeaDBeeF always floating with titlebar [note must set title prefs in app]
-    { rule = { name = "DeaDBeeF" 
-      }, properties = { placement = awful.placement.top_right, floating = true, titlebars_enabled = true } 
+    { rule = { name = "DeaDBeeF"
+      }, properties = { placement = awful.placement.top_right, floating = true, titlebars_enabled = true }
     },
-    
+
     -- twitter chromium "app"
-    { rule = { name = "Twitter" 
-      }, properties = { placement = awful.placement.top_right, maximized_vertical = true,  
+    { rule = { name = "Twitter"
+      }, properties = { placement = awful.placement.top_right, maximized_vertical = true,
                         dockable = true, type = "utility",
                         ontop = true, floating = true },
          callback = function(c)
