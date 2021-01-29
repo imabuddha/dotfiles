@@ -92,6 +92,7 @@ alias ll='exa -l'
 alias ls='exa'
 
 alias cat='bat'
+alias man='batman'
 
 # nnn: detailed, cp & mv progress, fortune
 alias nnn='nnn -drF'
